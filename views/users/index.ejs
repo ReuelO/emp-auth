@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Login authentication with Express, MySQL and Passport"
+    />
+    <meta name="author" content="ReuelO" />
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Favicons -->
+    <!-- <link rel="icon" href="/images/favicon.ico" /> -->
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="d-flex w-100 h-100 py-2 px-5 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">EMP Auth</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/users/<%= user.id %>"
+              >Dashboard</a
+            >
+            <a class="nav-link" href="/users/<%= user.id %>/profile">Profile</a>
+            <a class="nav-link text-danger" href="/logout">Logout</a>
+          </nav>
+        </div>
+      </header>
+
+      <%- include ../flash_messages %>
+
+      <main class="p-0">
+        <h1>EMP Auth</h1>
+        <p class="lead">
+          Login system built using Express, MySQL and PassportJS
+        </p>
+        <hr class="my-3" />
+
+        <div class="card bg-white text-dark text-start m-3">
+          <div class="card-body p-5">
+            <h5 class="card-title">User Details</h5>
+            <% data.forEach(function(one){ %>
+            <p class="card-text">
+              User ID: <b><%= one.id %></b> <br />
+              Username: <b><%= one.username %></b>
+            </p>
+            <% }); %>
+            <a
+              href="/users/<%= user.id %>/profile"
+              class="btn btn-outline-dark fw-bold border-dark"
+              >View Profile</a
+            >
+          </div>
+        </div>
+      </main>
+
+      <footer class="mt-auto text-white-50 bg-dark">
+        <p class="mb-1">Developed by <b>ReuelO</b></p>
+        <p>
+          <a
+            class="btn btn-sm btn-outline-light"
+            href="https://github.com/ReuelO"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a
+            class="btn btn-sm btn-outline-light"
+            href="https://twitter.com/OmwengaReuel"
+            target="_blank"
+          >
+            Twitter
+          </a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
