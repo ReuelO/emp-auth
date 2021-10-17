@@ -58,7 +58,7 @@ module.exports = function (passport) {
                   User,
                   req.flash(
                     "success",
-                    `User ${User.id} (${username}) successfully registered!`
+                    `User successfully registered!`
                   )
                 );
               });
