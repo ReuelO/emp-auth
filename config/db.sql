@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS mysqlpassportlogin;
+CREATE DATABASE IF NOT EXISTS emp_auth;
 
-USE mysqlpassportlogin;
+USE emp_auth;
 
 CREATE TABLE users(
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -8,8 +8,3 @@ CREATE TABLE users(
     password VARCHAR(100),
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- INSERT INTO
---     users
--- VALUES
---     (1000, "User", "", "");

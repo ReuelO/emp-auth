@@ -14,7 +14,7 @@ var options = {
   port: 3306,
   user: "root",
   password: "",
-  database: "mysqlpassportlogin",
+  database: "emp_auth",
 };
 
 var sessionStore = new MySQLStore(options);

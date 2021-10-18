@@ -1,5 +1,5 @@
 {
-  "name": "express-mysql-passport-login",
+  "name": "emp-auth",
   "version": "0.0.0",
   "private": true,
   "scripts": {

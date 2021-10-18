@@ -5,12 +5,12 @@ var connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "",
-  database: "mysqlpassportlogin",
+  database: "emp_auth",
 });
 
 connection.connect(function (err) {
   if (err) throw err;
-  
+
   console.log("Connected at http://localhost:3000");
 });
 
