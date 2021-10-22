@@ -39,6 +39,7 @@ module.exports = function (passport) {
             var User = {
               username: username,
               password: password,
+              created: new Date(),
             };
 
             // hash password
@@ -50,16 +51,13 @@ module.exports = function (passport) {
               connection.query(sql, [User], function (err, rows) {
                 if (err) return done(err);
 
-                User.id = rows.insertId;
-                console.log(`User ${User.id} (${username}) registered!`);
+                User.user_id = rows.insertId;
+                console.log(`User ${User.user_id} (${username}) registered!`);
 
                 return done(
                   null,
                   User,
-                  req.flash(
-                    "success",
-                    `User successfully registered!`
-                  )
+                  req.flash("success", `User successfully registered!`)
                 );
               });
             });

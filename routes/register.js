@@ -16,7 +16,7 @@ module.exports = function (app, passport) {
       failureFlash: true, // allow flash messages
     }),
     function (req, res) {
-      console.log("User " + req.user.id + " registered!");
+      console.log("User " + req.user.user_id + " registered!");
 
       if (req.body.remember) {
         req.session.cookie.maxAge = 1000 * 60 * 3 * 12;

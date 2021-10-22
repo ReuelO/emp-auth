@@ -15,7 +15,7 @@ module.exports = function (app, passport) {
       failureFlash: true, // allow flash messages
     }),
     function (req, res) {
-      console.log(`User ${req.user.id} (${req.user.username}) logged in!`);
+      console.log(`User ${req.user.user_id} (${req.user.username}) logged in!`);
 
       if (req.body.remember) {
         req.session.cookie.maxAge = 1000 * 60 * 3 * 12;
@@ -24,7 +24,7 @@ module.exports = function (app, passport) {
       }
 
       // if user is logged in
-      res.redirect("/users/" + req.user.id);
+      res.redirect("/users/" + req.user.user_id);
     }
   );
 

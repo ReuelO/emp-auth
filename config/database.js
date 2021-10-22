@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 connection.connect(function (err) {
   if (err) throw err;
 
-  console.log("Connected at http://localhost:3000");
+  console.log("Connected at http://localhost:8000");
 });
 
 module.exports = connection;
