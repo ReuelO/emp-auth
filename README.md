@@ -10,10 +10,14 @@ git clone https://github.com/ReuelO/emp-auth.git
 ```
 
 2. Access the repo
-``` cd emp-auth ```
+```
+cd emp-auth
+```
 
 3. Install node modules
-``` npm install ```
+```
+npm install
+```
 
 ### Usage
 1. Import database file (to store data)
@@ -24,7 +28,9 @@ git clone https://github.com/ReuelO/emp-auth.git
 > You now have a database "emp_auth" with a "users" table where all users' data will be saved
 
 2. Run the project on the command console
-``` npm start ```
+```
+npm start
+```
 
 3. To view the project, open your browser and type in **http://localhost:8000**
 
