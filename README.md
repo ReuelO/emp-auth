@@ -5,7 +5,9 @@ Login system built using Express, MySQL and PassportJS
 ## How to use this project
 ### Installation
 1. Clone this repo
-``` git clone https://github.com/ReuelO/emp-auth.git ```
+```
+git clone https://github.com/ReuelO/emp-auth.git
+```
 
 2. Access the repo
 ``` cd emp-auth ```
