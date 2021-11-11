@@ -1,6 +1,6 @@
 # EMP Auth
 
-Login system built using Express, MySQL and PassportJS
+Authentication system built using Express, MySQL and PassportJS
 
 
 ## How to
