@@ -15,10 +15,11 @@ Login system built using Express, MySQL and PassportJS
 
 ### Usage
 1. Import database file (to store data)
-- you will need MySQL [PHPMyAdmin] (or any other alternative) to run a database
-- on PHPMyAdmin, select "import" on the main dashboard
-- click "choose file" (/emp-auth/config/db.php), then "go"
-> you now have a database "emp_auth" with a "users" table where all users' data will be saved
+- You will need MySQL [PHPMyAdmin] (or any other alternative) to run a database
+- On PHPMyAdmin, select "import" on the main dashboard
+- Click "choose file" (/emp-auth/config/db.php), then "go"
+
+> You now have a database "emp_auth" with a "users" table where all users' data will be saved
 
 2. Run the project on the command console
 ``` npm start ```
@@ -26,9 +27,9 @@ Login system built using Express, MySQL and PassportJS
 3. To view the project, open your browser and type in **http://localhost:8000**
 
 ### Features
-- [x] simple, clean UI
-- [x] can securely register and log in (password is encrypted)
-- [x] can edit profile (add other user details)
-- [x] can change password
+- [x] Simple, clean UI
+- [x] Secure sign up and sign in (password is encrypted)
+- [x] User can edit profile (add other user details)
+- [x] User can change password
 
 > 💪 Enjoy!
