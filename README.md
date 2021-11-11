@@ -40,4 +40,4 @@ npm start
 - [x] User can edit profile (add other user details)
 - [x] User can change password
 
-> 💪 Enjoy!
+#### 💪 Enjoy!
