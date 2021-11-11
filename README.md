@@ -2,7 +2,8 @@
 
 Login system built using Express, MySQL and PassportJS
 
-## How to use this project
+## How to
+
 ### Installation
 1. Clone this repo
 ```
